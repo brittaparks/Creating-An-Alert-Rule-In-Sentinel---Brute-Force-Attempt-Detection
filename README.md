@@ -1,4 +1,4 @@
-# # Security-Operation---Creating-Alert-Rule-In-Sentinel
+# Creating-Alert-Rule-In-Sentinel - Brute Force Attempt Detection
 
 ## Explanation
 When entities (local or remote users, usually) attempt to log into a virtual machine, a log will be created on the local machine and then forwarded to Microsoft Defender for Endpoint under the DeviceLogonEvents table. These logs are then forwarded to the Log Analytics Workspace being used by Microsoft Sentinel, our SIEM. Within Sentinel, I defined an alert to trigger when the same entity fails to log into the same VM a given number of times within a certain time period. (i.e. 10 failed logons or more per 5 hours). 
